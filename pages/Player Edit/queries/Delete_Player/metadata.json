@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/pl/players/delete=1"
+        "url": "web:4000/pl/players/delete={{delete_player_id_input.filterText}}"
       },
       "invalids": [],
       "messages": [],
@@ -46,13 +46,17 @@
     "dynamicBindingPathList": [
       {
         "key": "body"
+      },
+      {
+        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Add_New_Player.data"
+      "Add_New_Player.data",
+      "delete_player_id_input.filterText"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
