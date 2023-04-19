@@ -11,6 +11,10 @@
     {
       "id": "League Commissioner Info",
       "isDefault": false
+    },
+    {
+      "id": "League Commissioner Edit",
+      "isDefault": false
     }
   ],
   "viewMode": false,
