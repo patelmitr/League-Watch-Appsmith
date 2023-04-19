@@ -49,7 +49,10 @@
                   "key": "tableData"
                 },
                 {
-                  "key": "primaryColumns.player_id.computedValue"
+                  "key": "primaryColumns.label.computedValue"
+                },
+                {
+                  "key": "primaryColumns.value.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -87,7 +90,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681923328343,
+              "columnUpdatedAt": 1681929080678,
               "originalBottomRow": 153,
               "defaultSelectedRowIndices": [
                 0
@@ -95,7 +98,8 @@
               "widgetName": "All_Players",
               "defaultPageSize": 0,
               "columnOrder": [
-                "player_id"
+                "label",
+                "value"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
@@ -111,13 +115,13 @@
               "dynamicTriggerPathList": [],
               "borderWidth": "1",
               "primaryColumns": {
-                "player_id": {
+                "label": {
                   "allowCellWrapping": false,
-                  "index": 5,
+                  "index": 0,
                   "width": 150,
-                  "originalId": "player_id",
-                  "id": "player_id",
-                  "alias": "player_id",
+                  "originalId": "label",
+                  "id": "label",
+                  "alias": "label",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
@@ -132,10 +136,39 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "player_id",
+                  "label": "label",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{All_Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"player_id\"]))}}",
+                  "computedValue": "{{All_Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"label\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "value": {
+                  "allowCellWrapping": false,
+                  "index": 1,
+                  "width": 150,
+                  "originalId": "value",
+                  "id": "value",
+                  "alias": "value",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "value",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{All_Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"value\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -2546,6 +2579,60 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "originalBottomRow": 49,
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Select3",
+                      "isFilterable": true,
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                      "labelText": "Label",
+                      "searchTags": [
+                        "dropdown"
+                      ],
+                      "topRow": 9,
+                      "bottomRow": 16,
+                      "parentRowSpace": 10,
+                      "labelWidth": 5,
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "GREEN",
+                      "animateLoading": true,
+                      "parentColumnSpace": 12.10546875,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 24,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelPosition": "Top",
+                      "options": "[\n  {\n    \"player\": 1,\n    \"playerid\": 17\n  },\n  {\n    \"label\": \"Green\",\n    \"value\": \"GREEN\"\n  },\n  {\n    \"label\": \"Red\",\n    \"value\": \"RED\"\n  }\n]",
+                      "placeholderText": "Select option",
+                      "isDisabled": false,
+                      "key": "4p2ylcz0jk",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 44,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "cxjbtty1ed",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "minWidth": 450,
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "k19b7rgh33",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "responsiveBehavior": "fill",
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
                       "minDynamicHeight": 4
                     }
                   ],
