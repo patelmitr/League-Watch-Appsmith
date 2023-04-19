@@ -1,1 +1,1 @@
-{{Add_New_Player.data}}
+{{Post_Player.data}}

@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{Add_New_Player.data}}",
+      "body": "{{Post_Player.data}}",
       "bodyFormData": [],
       "httpMethod": "PUT",
       "selfReferencingDataPaths": [],
@@ -52,7 +52,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Add_New_Player.data"
+      "Post_Player.data"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

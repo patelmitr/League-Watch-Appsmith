@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Get_Commissioner_Last_Name",
+    "name": "get_players_to_edit",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/l/leagueCommissioner/lastname={{user_input_commissioner_last.text}}"
+        "url": "web:4000/pl/players/{{edit_player_select.filterText}}"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "League Commissioner Info",
+    "pageId": "Player Edit",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -46,14 +46,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "user_input_commissioner_last.text"
+      "edit_player_select.filterText"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "League Commissioner Info_Get_Commissioner_Last_Name",
+  "id": "Player Edit_get_players_to_edit",
   "deleted": false,
-  "gitSyncId": "643f54a61a6110093ea575cb_643f6beb1a6110093ea5760b"
+  "gitSyncId": "643f54a61a6110093ea575cb_644068701a6110093ea57656"
 }
