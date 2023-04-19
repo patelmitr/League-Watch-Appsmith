@@ -3,6 +3,10 @@
     {
       "id": "Player Search",
       "isDefault": true
+    },
+    {
+      "id": "Player Edit",
+      "isDefault": false
     }
   ],
   "viewMode": false,
