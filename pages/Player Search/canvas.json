@@ -4077,7 +4077,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button1",
+                      "widgetName": "ID_Button",
                       "onClick": "{{Get_Players_By_Id.run(() => showAlert('Successfully retrieved data','success'), () => showAlert('Enter a valid player id','error'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
@@ -4371,7 +4371,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button1Copy",
+                      "widgetName": "Point_Button",
                       "onClick": "{{Get_Player_By_Points.run(() => showAlert('Successfully retrieved data','success'), () => showAlert('Enter a valid player points','error'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
@@ -4665,7 +4665,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button1CopyCopy",
+                      "widgetName": "Assist_Button",
                       "onClick": "{{Get_Players_By_Assists.run(() => showAlert('Successfully retrieved data','success'), () => showAlert('Enter a valid assist number','error'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
@@ -4959,7 +4959,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button1CopyCopyCopy",
+                      "widgetName": "Steal_Button",
                       "onClick": "{{Get_Players_By_Steals.run(() => showAlert('Successfully retrieved data','success'), () => showAlert('Please enter valid steals','error'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
@@ -5253,7 +5253,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button1CopyCopyCopyCopy",
+                      "widgetName": "Block_Button",
                       "onClick": "{{Get_Players_By_Blocks.run(() => showAlert('Successfully retrieved data','success'), () => showAlert('Enter a valid blocks number','error'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
@@ -5547,7 +5547,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button1CopyCopyCopyCopyCopy",
+                      "widgetName": "Rebounds_Button",
                       "onClick": "{{Get_Players_By_Rebounds.run(() => showAlert('Successfully retrieved data','success'), () => showAlert('Enter a valid rebound amount','error'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
