@@ -560,7 +560,7 @@
                       ],
                       "labelPosition": "Top",
                       "labelStyle": "",
-                      "inputType": "NUMBER",
+                      "inputType": "TEXT",
                       "isDisabled": false,
                       "key": "pnfxr6vtl9",
                       "labelTextSize": "0.875rem",
@@ -829,25 +829,11 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "user_input_commissioner_league",
-                      "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
                       "topRow": 6,
-                      "bottomRow": 13,
-                      "parentRowSpace": 10,
                       "labelWidth": 5,
-                      "autoFocus": false,
                       "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
                       "animateLoading": true,
-                      "parentColumnSpace": 4.3984375,
-                      "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
                       "leftColumn": 2,
                       "dynamicBindingPathList": [
@@ -858,32 +844,47 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "labelPosition": "Top",
                       "labelStyle": "",
-                      "inputType": "NUMBER",
+                      "inputType": "TEXT",
+                      "maxChars": "",
                       "isDisabled": false,
-                      "key": "pnfxr6vtl9",
-                      "labelTextSize": "0.875rem",
                       "isRequired": false,
-                      "isDeprecated": false,
-                      "rightColumn": 63,
                       "dynamicHeight": "FIXED",
-                      "widgetId": "75mmlmhxvz",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "showStepArrows": false,
-                      "minWidth": 450,
                       "isVisible": true,
-                      "label": "Enter league name",
                       "version": 2,
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "originalBottomRow": 15,
+                      "widgetName": "user_input_commis_league_name",
+                      "displayName": "Input",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "bottomRow": 13,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "hideCard": false,
+                      "parentColumnSpace": 4.3984375,
+                      "dynamicTriggerPathList": [],
+                      "labelPosition": "Top",
+                      "key": "pnfxr6vtl9",
+                      "labelTextSize": "0.875rem",
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "widgetId": "75mmlmhxvz",
+                      "minWidth": 450,
+                      "label": "Enter league name",
                       "parentId": "75twdlgxql",
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
-                      "isLoading": false,
                       "responsiveBehavior": "fill",
                       "originalTopRow": 8,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 15,
                       "iconAlign": "left",
                       "defaultText": "",
                       "minDynamicHeight": 4
@@ -1129,7 +1130,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "user_input_commissioner_le",
+                      "widgetName": "user_input_commissioner_salary",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -1760,7 +1761,7 @@
                       ],
                       "labelPosition": "Top",
                       "labelStyle": "",
-                      "inputType": "NUMBER",
+                      "inputType": "TEXT",
                       "isDisabled": false,
                       "key": "pnfxr6vtl9",
                       "labelTextSize": "0.875rem",
@@ -2429,7 +2430,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 35,
+              "topRow": 36,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -2518,7 +2519,7 @@
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 56,
+              "bottomRow": 57,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -3107,7 +3108,7 @@
               "defaultSelectedRowIndices": [
                 0
               ],
-              "widgetName": "Tenure",
+              "widgetName": "League_Name",
               "defaultPageSize": 0,
               "columnOrder": [
                 "first_name",
@@ -3155,7 +3156,7 @@
                   "label": "first_name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Tenure.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"first_name\"]))}}",
+                  "computedValue": "{{League_Name.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"first_name\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -3184,7 +3185,7 @@
                   "label": "last_name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Tenure.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"last_name\"]))}}",
+                  "computedValue": "{{League_Name.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"last_name\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -3213,7 +3214,7 @@
                   "label": "league_commissioner_id",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Tenure.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_commissioner_id\"]))}}",
+                  "computedValue": "{{League_Name.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_commissioner_id\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -3242,7 +3243,7 @@
                   "label": "league_name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Tenure.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_name\"]))}}",
+                  "computedValue": "{{League_Name.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_name\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -3271,7 +3272,7 @@
                   "label": "salary",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Tenure.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"salary\"]))}}",
+                  "computedValue": "{{League_Name.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"salary\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -3300,7 +3301,7 @@
                   "label": "tenure",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Tenure.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tenure\"]))}}",
+                  "computedValue": "{{League_Name.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tenure\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -3707,7 +3708,7 @@
               "defaultSelectedRowIndices": [
                 0
               ],
-              "widgetName": "League_Name",
+              "widgetName": "Tenure",
               "defaultPageSize": 0,
               "columnOrder": [
                 "first_name",
@@ -3755,7 +3756,7 @@
                   "label": "first_name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{League_Name.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"first_name\"]))}}",
+                  "computedValue": "{{Tenure.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"first_name\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -3784,7 +3785,7 @@
                   "label": "last_name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{League_Name.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"last_name\"]))}}",
+                  "computedValue": "{{Tenure.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"last_name\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -3813,7 +3814,7 @@
                   "label": "league_commissioner_id",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{League_Name.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_commissioner_id\"]))}}",
+                  "computedValue": "{{Tenure.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_commissioner_id\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -3842,7 +3843,7 @@
                   "label": "league_name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{League_Name.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_name\"]))}}",
+                  "computedValue": "{{Tenure.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_name\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -3871,7 +3872,7 @@
                   "label": "salary",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{League_Name.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"salary\"]))}}",
+                  "computedValue": "{{Tenure.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"salary\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -3900,7 +3901,7 @@
                   "label": "tenure",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{League_Name.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tenure\"]))}}",
+                  "computedValue": "{{Tenure.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tenure\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -3934,7 +3935,9 @@
               "name": "Get_Commissioner_First_Name",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "user_input_commissioner_first.text"
+              ],
               "timeoutInMillisecond": 10000
             },
             {
@@ -3942,7 +3945,9 @@
               "name": "Get_Commissioner_Last_Name",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "user_input_commissioner_last.text"
+              ],
               "timeoutInMillisecond": 10000
             },
             {
@@ -3950,7 +3955,9 @@
               "name": "Get_Commissioner_League_Name",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "user_input_commis_league_name.text"
+              ],
               "timeoutInMillisecond": 10000
             },
             {
@@ -3958,7 +3965,9 @@
               "name": "Get_Commissioner_Salary",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "user_input_commissioner_salary.text"
+              ],
               "timeoutInMillisecond": 10000
             },
             {
@@ -3966,7 +3975,9 @@
               "name": "Get_Commissioner_Tenure",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "user_input_commissioner_tenure.text"
+              ],
               "timeoutInMillisecond": 10000
             },
             {
@@ -3982,7 +3993,9 @@
               "name": "Get_League_Commissioner_ID",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "user_input_commissioner_id.text"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]
