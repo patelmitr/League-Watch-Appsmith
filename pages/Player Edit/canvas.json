@@ -2229,7 +2229,7 @@
                       "isFilterable": true,
                       "displayName": "Select",
                       "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-                      "labelText": "select player id",
+                      "labelText": "select player's id",
                       "searchTags": [
                         "dropdown"
                       ],
