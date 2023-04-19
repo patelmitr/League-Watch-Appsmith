@@ -7,6 +7,10 @@
     {
       "id": "Player Edit",
       "isDefault": false
+    },
+    {
+      "id": "League Commissioner Info",
+      "isDefault": false
     }
   ],
   "viewMode": false,
