@@ -4234,7 +4234,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button2",
+                      "widgetName": "ResetButton_id",
                       "onClick": "{{resetWidget(\"user_player_id_input\",true)}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
@@ -4546,7 +4546,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button2Copy",
+                      "widgetName": "ResetButton_points",
                       "onClick": "{{resetWidget(\"user_player_point_input\",true)}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
@@ -4857,7 +4857,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button2CopyCopy",
+                      "widgetName": "ResetButton_assists",
                       "onClick": "{{resetWidget(\"user_player_assist_input\",true)}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
@@ -5168,7 +5168,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button2CopyCopyCopy",
+                      "widgetName": "ResetButton_steals",
                       "onClick": "{{resetWidget(\"user_player_steal_input\",true)}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
@@ -5472,7 +5472,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button2CopyCopyCopyCopy",
+                      "widgetName": "ResetButton_block",
                       "onClick": "{{resetWidget(\"user_player_blocks_input\",true)}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
@@ -5772,7 +5772,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button2CopyCopyCopyCopyCopy",
+                      "widgetName": "ResetButton_rebounds",
                       "onClick": "{{resetWidget(\"user_player_rebounds_input\",true)}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
