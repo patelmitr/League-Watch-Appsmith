@@ -2352,8 +2352,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 33,
-                      "bottomRow": 37,
+                      "topRow": 36,
+                      "bottomRow": 40,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -2362,7 +2362,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 30,
+                      "leftColumn": 34,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -2375,7 +2375,7 @@
                       "isDisabled": false,
                       "key": "29lj9bh97w",
                       "isDeprecated": false,
-                      "rightColumn": 36,
+                      "rightColumn": 40,
                       "isDefaultClickDisabled": true,
                       "widgetId": "3vqamrs9n4",
                       "minWidth": 120,
@@ -2402,12 +2402,12 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 33,
-                      "bottomRow": 37,
+                      "topRow": 36,
+                      "bottomRow": 40,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
-                      "leftColumn": 22,
+                      "leftColumn": 26,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -2420,7 +2420,7 @@
                       "isDisabled": false,
                       "key": "29lj9bh97w",
                       "isDeprecated": false,
-                      "rightColumn": 29,
+                      "rightColumn": 33,
                       "isDefaultClickDisabled": true,
                       "widgetId": "ewmgu84kqm",
                       "minWidth": 120,
