@@ -28,7 +28,7 @@
           "children": [
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "borderColor": "#E0DEDE",
+              "borderColor": "{{appsmith.theme.colors.primaryColor}}",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
               "topRow": 0,
@@ -90,6 +90,54 @@
                 },
                 {
                   "key": "primaryColumns.turnovers.computedValue"
+                },
+                {
+                  "key": "cellBackground"
+                },
+                {
+                  "key": "primaryColumns.assists.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.blocks.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.first_name.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.games_played.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.last_name.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.player_id.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.player_number.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.points.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.position.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.rebounds.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.salary.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.steals.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.team_id.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.turnovers.cellBackground"
+                },
+                {
+                  "key": "borderColor"
                 }
               ],
               "needsHeightForContent": true,
@@ -101,6 +149,7 @@
               "isVisible": true,
               "enableClientSideSearch": true,
               "version": 1,
+              "textColor": "#713f12",
               "totalRecordsCount": 0,
               "isLoading": false,
               "childStylesheet": {
@@ -161,7 +210,7 @@
               "hideCard": false,
               "parentColumnSpace": 20.0625,
               "dynamicTriggerPathList": [],
-              "borderWidth": "1",
+              "borderWidth": "3",
               "primaryColumns": {
                 "assists": {
                   "allowCellWrapping": false,
@@ -173,7 +222,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -190,7 +239,7 @@
                   "computedValue": "{{All_Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"assists\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "blocks": {
                   "allowCellWrapping": false,
@@ -202,7 +251,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -219,7 +268,7 @@
                   "computedValue": "{{All_Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"blocks\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "first_name": {
                   "allowCellWrapping": false,
@@ -231,7 +280,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -248,7 +297,7 @@
                   "computedValue": "{{All_Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"first_name\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "games_played": {
                   "allowCellWrapping": false,
@@ -260,7 +309,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -277,7 +326,7 @@
                   "computedValue": "{{All_Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"games_played\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "last_name": {
                   "allowCellWrapping": false,
@@ -289,7 +338,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -306,7 +355,7 @@
                   "computedValue": "{{All_Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"last_name\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "player_id": {
                   "allowCellWrapping": false,
@@ -318,7 +367,7 @@
                   "horizontalAlignment": "RIGHT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -335,7 +384,7 @@
                   "computedValue": "{{All_Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"player_id\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "player_number": {
                   "allowCellWrapping": false,
@@ -347,7 +396,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -364,7 +413,7 @@
                   "computedValue": "{{All_Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"player_number\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "points": {
                   "allowCellWrapping": false,
@@ -376,7 +425,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -393,7 +442,7 @@
                   "computedValue": "{{All_Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"points\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "position": {
                   "allowCellWrapping": false,
@@ -405,7 +454,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -422,7 +471,7 @@
                   "computedValue": "{{All_Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"position\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "rebounds": {
                   "allowCellWrapping": false,
@@ -434,7 +483,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -451,7 +500,7 @@
                   "computedValue": "{{All_Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rebounds\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "salary": {
                   "allowCellWrapping": false,
@@ -463,7 +512,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -480,7 +529,7 @@
                   "computedValue": "{{All_Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"salary\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "steals": {
                   "allowCellWrapping": false,
@@ -492,7 +541,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -509,7 +558,7 @@
                   "computedValue": "{{All_Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"steals\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "team_id": {
                   "allowCellWrapping": false,
@@ -521,7 +570,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -538,7 +587,7 @@
                   "computedValue": "{{All_Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"team_id\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "turnovers": {
                   "allowCellWrapping": false,
@@ -550,7 +599,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -567,7 +616,7 @@
                   "computedValue": "{{All_Players.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"turnovers\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 }
               },
               "key": "mfm6muorv6",
@@ -586,6 +635,7 @@
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
               "isVisiblePagination": true,
+              "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
               "verticalAlignment": "CENTER"
             },
             {
@@ -652,6 +702,51 @@
                 },
                 {
                   "key": "primaryColumns.turnovers.computedValue"
+                },
+                {
+                  "key": "cellBackground"
+                },
+                {
+                  "key": "primaryColumns.assists.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.blocks.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.first_name.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.games_played.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.last_name.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.player_id.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.player_number.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.points.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.position.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.rebounds.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.salary.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.steals.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.team_id.cellBackground"
+                },
+                {
+                  "key": "primaryColumns.turnovers.cellBackground"
                 }
               ],
               "needsHeightForContent": true,
@@ -664,6 +759,7 @@
               "isVisible": true,
               "enableClientSideSearch": true,
               "version": 1,
+              "textColor": "#713f12",
               "totalRecordsCount": 0,
               "isLoading": false,
               "childStylesheet": {
@@ -740,7 +836,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -757,7 +853,7 @@
                   "computedValue": "{{Players_By_Id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"assists\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "blocks": {
                   "allowCellWrapping": false,
@@ -769,7 +865,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -786,7 +882,7 @@
                   "computedValue": "{{Players_By_Id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"blocks\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "first_name": {
                   "allowCellWrapping": false,
@@ -798,7 +894,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -815,7 +911,7 @@
                   "computedValue": "{{Players_By_Id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"first_name\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "games_played": {
                   "allowCellWrapping": false,
@@ -827,7 +923,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -844,7 +940,7 @@
                   "computedValue": "{{Players_By_Id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"games_played\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "last_name": {
                   "allowCellWrapping": false,
@@ -856,7 +952,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -873,7 +969,7 @@
                   "computedValue": "{{Players_By_Id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"last_name\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "player_id": {
                   "allowCellWrapping": false,
@@ -885,7 +981,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "select",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -902,7 +998,7 @@
                   "computedValue": "{{Players_By_Id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"player_id\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": "",
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
                   "customAlias": "",
                   "buttonLabel": "Input player id/",
                   "onClick": "{{Get_Players_By_Id.run()}}"
@@ -917,7 +1013,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -934,7 +1030,7 @@
                   "computedValue": "{{Players_By_Id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"player_number\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "points": {
                   "allowCellWrapping": false,
@@ -946,7 +1042,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -963,7 +1059,7 @@
                   "computedValue": "{{Players_By_Id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"points\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "position": {
                   "allowCellWrapping": false,
@@ -975,7 +1071,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -992,7 +1088,7 @@
                   "computedValue": "{{Players_By_Id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"position\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "rebounds": {
                   "allowCellWrapping": false,
@@ -1004,7 +1100,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -1021,7 +1117,7 @@
                   "computedValue": "{{Players_By_Id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rebounds\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "salary": {
                   "allowCellWrapping": false,
@@ -1033,7 +1129,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -1050,7 +1146,7 @@
                   "computedValue": "{{Players_By_Id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"salary\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "steals": {
                   "allowCellWrapping": false,
@@ -1062,7 +1158,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -1079,7 +1175,7 @@
                   "computedValue": "{{Players_By_Id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"steals\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "team_id": {
                   "allowCellWrapping": false,
@@ -1091,7 +1187,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -1108,7 +1204,7 @@
                   "computedValue": "{{Players_By_Id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"team_id\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 },
                 "turnovers": {
                   "allowCellWrapping": false,
@@ -1120,7 +1216,7 @@
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "number",
-                  "textColor": "",
+                  "textColor": "#713f12",
                   "textSize": "0.875rem",
                   "fontStyle": "",
                   "enableFilter": true,
@@ -1137,7 +1233,7 @@
                   "computedValue": "{{Players_By_Id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"turnovers\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "{{appsmith.theme.colors.backgroundColor}}"
                 }
               },
               "key": "mfm6muorv6",
@@ -1156,6 +1252,7 @@
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
               "isVisiblePagination": true,
+              "cellBackground": "{{appsmith.theme.colors.backgroundColor}}",
               "verticalAlignment": "CENTER"
             },
             {
@@ -3980,7 +4077,7 @@
             },
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "borderColor": "#E0DEDE",
+              "borderColor": "{{appsmith.theme.colors.primaryColor}}",
               "widgetName": "user_player_id_input",
               "isCanvas": true,
               "displayName": "Form",
@@ -3989,13 +4086,14 @@
                 "group"
               ],
               "topRow": 48,
-              "bottomRow": 68,
+              "bottomRow": 69,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
               "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
@@ -4003,6 +4101,9 @@
                 },
                 {
                   "key": "boxShadow"
+                },
+                {
+                  "key": "borderColor"
                 }
               ],
               "children": [
@@ -4047,6 +4148,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "textColor"
                         }
                       ],
                       "shouldTruncate": false,
@@ -4061,7 +4165,7 @@
                       "minWidth": 450,
                       "isVisible": true,
                       "fontStyle": "BOLD",
-                      "textColor": "#231F20",
+                      "textColor": "{{appsmith.theme.colors.backgroundColor}}",
                       "version": 1,
                       "parentId": "ynnlr2q7li",
                       "renderMode": "CANVAS",
@@ -4176,25 +4280,11 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "user_input_player_id",
-                      "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
                       "topRow": 6,
-                      "bottomRow": 13,
-                      "parentRowSpace": 10,
                       "labelWidth": 5,
-                      "autoFocus": false,
                       "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
                       "animateLoading": true,
-                      "parentColumnSpace": 4.3984375,
-                      "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
                       "leftColumn": 2,
                       "dynamicBindingPathList": [
@@ -4203,34 +4293,52 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "labelTextColor"
                         }
                       ],
-                      "labelPosition": "Top",
                       "labelStyle": "",
                       "inputType": "NUMBER",
                       "isDisabled": false,
-                      "key": "pnfxr6vtl9",
-                      "labelTextSize": "0.875rem",
                       "isRequired": true,
-                      "isDeprecated": false,
-                      "rightColumn": 63,
                       "dynamicHeight": "FIXED",
-                      "widgetId": "7aj1jb925p",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "showStepArrows": false,
-                      "minWidth": 450,
                       "isVisible": true,
-                      "label": "Enter player id",
                       "version": 2,
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "originalBottomRow": 15,
+                      "widgetName": "user_input_player_id",
+                      "displayName": "Input",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "bottomRow": 13,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "hideCard": false,
+                      "parentColumnSpace": 4.3984375,
+                      "dynamicTriggerPathList": [],
+                      "labelPosition": "Top",
+                      "labelTextColor": "{{appsmith.theme.colors.backgroundColor}}",
+                      "key": "pnfxr6vtl9",
+                      "labelTextSize": "0.875rem",
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "widgetId": "7aj1jb925p",
+                      "minWidth": 450,
+                      "label": "Enter player id",
                       "parentId": "ynnlr2q7li",
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
-                      "isLoading": false,
                       "responsiveBehavior": "fill",
                       "originalTopRow": 8,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 15,
                       "iconAlign": "left",
                       "defaultText": "",
                       "minDynamicHeight": 4
@@ -4252,10 +4360,10 @@
                   "flexLayers": []
                 }
               ],
-              "borderWidth": "1",
+              "borderWidth": "3",
               "positioning": "fixed",
               "key": "to4x3flbm3",
-              "backgroundColor": "#FFFFFF",
+              "backgroundColor": "#713f12",
               "isDeprecated": false,
               "rightColumn": 24,
               "dynamicHeight": "AUTO_HEIGHT",
@@ -4274,7 +4382,7 @@
             },
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "borderColor": "#E0DEDE",
+              "borderColor": "{{appsmith.theme.colors.primaryColor}}",
               "widgetName": "user_player_point_input",
               "isCanvas": true,
               "displayName": "Form",
@@ -4282,14 +4390,15 @@
               "searchTags": [
                 "group"
               ],
-              "topRow": 74,
-              "bottomRow": 95,
+              "topRow": 75,
+              "bottomRow": 97,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
               "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
@@ -4297,6 +4406,9 @@
                 },
                 {
                   "key": "boxShadow"
+                },
+                {
+                  "key": "borderColor"
                 }
               ],
               "children": [
@@ -4341,6 +4453,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "textColor"
                         }
                       ],
                       "shouldTruncate": false,
@@ -4349,13 +4464,14 @@
                       "key": "eipar0eqzg",
                       "isDeprecated": false,
                       "rightColumn": 58,
+                      "backgroundColor": "transparent",
                       "textAlign": "LEFT",
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "z848qg10nh",
                       "minWidth": 450,
                       "isVisible": true,
                       "fontStyle": "BOLD",
-                      "textColor": "#231F20",
+                      "textColor": "{{appsmith.theme.colors.backgroundColor}}",
                       "version": 1,
                       "parentId": "rx51jty4af",
                       "renderMode": "CANVAS",
@@ -4470,25 +4586,11 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "user_input_player_point",
-                      "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
                       "topRow": 6,
-                      "bottomRow": 13,
-                      "parentRowSpace": 10,
                       "labelWidth": 5,
-                      "autoFocus": false,
                       "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
                       "animateLoading": true,
-                      "parentColumnSpace": 4.3984375,
-                      "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
                       "leftColumn": 2,
                       "dynamicBindingPathList": [
@@ -4497,34 +4599,52 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "labelTextColor"
                         }
                       ],
-                      "labelPosition": "Top",
                       "labelStyle": "",
                       "inputType": "NUMBER",
                       "isDisabled": false,
-                      "key": "pnfxr6vtl9",
-                      "labelTextSize": "0.875rem",
                       "isRequired": true,
-                      "isDeprecated": false,
-                      "rightColumn": 63,
                       "dynamicHeight": "FIXED",
-                      "widgetId": "h05x51c0b1",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "showStepArrows": false,
-                      "minWidth": 450,
                       "isVisible": true,
-                      "label": "Enter player points",
                       "version": 2,
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "originalBottomRow": 15,
+                      "widgetName": "user_input_player_point",
+                      "displayName": "Input",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "bottomRow": 13,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "hideCard": false,
+                      "parentColumnSpace": 4.3984375,
+                      "dynamicTriggerPathList": [],
+                      "labelPosition": "Top",
+                      "labelTextColor": "{{appsmith.theme.colors.backgroundColor}}",
+                      "key": "pnfxr6vtl9",
+                      "labelTextSize": "0.875rem",
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "widgetId": "h05x51c0b1",
+                      "minWidth": 450,
+                      "label": "Enter player points",
                       "parentId": "rx51jty4af",
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
-                      "isLoading": false,
                       "responsiveBehavior": "fill",
                       "originalTopRow": 8,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 15,
                       "iconAlign": "left",
                       "defaultText": "",
                       "minDynamicHeight": 4
@@ -4546,10 +4666,10 @@
                   "flexLayers": []
                 }
               ],
-              "borderWidth": "1",
+              "borderWidth": "3",
               "positioning": "fixed",
               "key": "to4x3flbm3",
-              "backgroundColor": "#FFFFFF",
+              "backgroundColor": "#713f12",
               "isDeprecated": false,
               "rightColumn": 24,
               "dynamicHeight": "AUTO_HEIGHT",
@@ -4568,7 +4688,7 @@
             },
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "borderColor": "#E0DEDE",
+              "borderColor": "{{appsmith.theme.colors.primaryColor}}",
               "widgetName": "user_player_assist_input",
               "isCanvas": true,
               "displayName": "Form",
@@ -4576,14 +4696,15 @@
               "searchTags": [
                 "group"
               ],
-              "topRow": 108,
-              "bottomRow": 129,
+              "topRow": 110,
+              "bottomRow": 132,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
               "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
@@ -4591,6 +4712,9 @@
                 },
                 {
                   "key": "boxShadow"
+                },
+                {
+                  "key": "borderColor"
                 }
               ],
               "children": [
@@ -4635,6 +4759,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "textColor"
                         }
                       ],
                       "shouldTruncate": false,
@@ -4649,7 +4776,7 @@
                       "minWidth": 450,
                       "isVisible": true,
                       "fontStyle": "BOLD",
-                      "textColor": "#231F20",
+                      "textColor": "{{appsmith.theme.colors.backgroundColor}}",
                       "version": 1,
                       "parentId": "a3rqcuw0bk",
                       "renderMode": "CANVAS",
@@ -4764,25 +4891,11 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "user_input_player_assist",
-                      "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
                       "topRow": 6,
-                      "bottomRow": 13,
-                      "parentRowSpace": 10,
                       "labelWidth": 5,
-                      "autoFocus": false,
                       "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
                       "animateLoading": true,
-                      "parentColumnSpace": 4.3984375,
-                      "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
                       "leftColumn": 2,
                       "dynamicBindingPathList": [
@@ -4791,34 +4904,52 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "labelTextColor"
                         }
                       ],
-                      "labelPosition": "Top",
                       "labelStyle": "",
                       "inputType": "NUMBER",
                       "isDisabled": false,
-                      "key": "pnfxr6vtl9",
-                      "labelTextSize": "0.875rem",
                       "isRequired": true,
-                      "isDeprecated": false,
-                      "rightColumn": 63,
                       "dynamicHeight": "FIXED",
-                      "widgetId": "4ahldjacuc",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "showStepArrows": false,
-                      "minWidth": 450,
                       "isVisible": true,
-                      "label": "Enter player assists",
                       "version": 2,
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "originalBottomRow": 15,
+                      "widgetName": "user_input_player_assist",
+                      "displayName": "Input",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "bottomRow": 13,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "hideCard": false,
+                      "parentColumnSpace": 4.3984375,
+                      "dynamicTriggerPathList": [],
+                      "labelPosition": "Top",
+                      "labelTextColor": "{{appsmith.theme.colors.backgroundColor}}",
+                      "key": "pnfxr6vtl9",
+                      "labelTextSize": "0.875rem",
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "widgetId": "4ahldjacuc",
+                      "minWidth": 450,
+                      "label": "Enter player assists",
                       "parentId": "a3rqcuw0bk",
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
-                      "isLoading": false,
                       "responsiveBehavior": "fill",
                       "originalTopRow": 8,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 15,
                       "iconAlign": "left",
                       "defaultText": "",
                       "minDynamicHeight": 4
@@ -4840,10 +4971,10 @@
                   "flexLayers": []
                 }
               ],
-              "borderWidth": "1",
+              "borderWidth": "3",
               "positioning": "fixed",
               "key": "to4x3flbm3",
-              "backgroundColor": "#FFFFFF",
+              "backgroundColor": "#713f12",
               "isDeprecated": false,
               "rightColumn": 24,
               "dynamicHeight": "AUTO_HEIGHT",
@@ -4862,7 +4993,7 @@
             },
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "borderColor": "#E0DEDE",
+              "borderColor": "{{appsmith.theme.colors.primaryColor}}",
               "widgetName": "user_player_steal_input",
               "isCanvas": true,
               "displayName": "Form",
@@ -4870,14 +5001,15 @@
               "searchTags": [
                 "group"
               ],
-              "topRow": 140,
-              "bottomRow": 161,
+              "topRow": 143,
+              "bottomRow": 165,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
               "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
@@ -4885,6 +5017,9 @@
                 },
                 {
                   "key": "boxShadow"
+                },
+                {
+                  "key": "borderColor"
                 }
               ],
               "children": [
@@ -4929,6 +5064,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "textColor"
                         }
                       ],
                       "shouldTruncate": false,
@@ -4943,7 +5081,7 @@
                       "minWidth": 450,
                       "isVisible": true,
                       "fontStyle": "BOLD",
-                      "textColor": "#231F20",
+                      "textColor": "{{appsmith.theme.colors.backgroundColor}}",
                       "version": 1,
                       "parentId": "s238wc5lqn",
                       "renderMode": "CANVAS",
@@ -5058,25 +5196,11 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "user_input_player_steal",
-                      "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
                       "topRow": 6,
-                      "bottomRow": 13,
-                      "parentRowSpace": 10,
                       "labelWidth": 5,
-                      "autoFocus": false,
                       "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
                       "animateLoading": true,
-                      "parentColumnSpace": 4.3984375,
-                      "dynamicTriggerPathList": [],
                       "resetOnSubmit": true,
                       "leftColumn": 2,
                       "dynamicBindingPathList": [
@@ -5085,34 +5209,52 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "labelTextColor"
                         }
                       ],
-                      "labelPosition": "Top",
                       "labelStyle": "",
                       "inputType": "NUMBER",
                       "isDisabled": false,
-                      "key": "pnfxr6vtl9",
-                      "labelTextSize": "0.875rem",
                       "isRequired": true,
-                      "isDeprecated": false,
-                      "rightColumn": 63,
                       "dynamicHeight": "FIXED",
-                      "widgetId": "nhfmri6kfh",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "showStepArrows": false,
-                      "minWidth": 450,
                       "isVisible": true,
-                      "label": "Enter player steals",
                       "version": 2,
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "originalBottomRow": 15,
+                      "widgetName": "user_input_player_steal",
+                      "displayName": "Input",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "bottomRow": 13,
+                      "parentRowSpace": 10,
+                      "autoFocus": false,
+                      "hideCard": false,
+                      "parentColumnSpace": 4.3984375,
+                      "dynamicTriggerPathList": [],
+                      "labelPosition": "Top",
+                      "labelTextColor": "{{appsmith.theme.colors.backgroundColor}}",
+                      "key": "pnfxr6vtl9",
+                      "labelTextSize": "0.875rem",
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "widgetId": "nhfmri6kfh",
+                      "minWidth": 450,
+                      "label": "Enter player steals",
                       "parentId": "s238wc5lqn",
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
-                      "isLoading": false,
                       "responsiveBehavior": "fill",
                       "originalTopRow": 8,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 15,
                       "iconAlign": "left",
                       "defaultText": "",
                       "minDynamicHeight": 4
@@ -5134,10 +5276,10 @@
                   "flexLayers": []
                 }
               ],
-              "borderWidth": "1",
+              "borderWidth": "3",
               "positioning": "fixed",
               "key": "to4x3flbm3",
-              "backgroundColor": "#FFFFFF",
+              "backgroundColor": "#713f12",
               "isDeprecated": false,
               "rightColumn": 24,
               "dynamicHeight": "AUTO_HEIGHT",
@@ -5164,8 +5306,8 @@
               "searchTags": [
                 "group"
               ],
-              "topRow": 172,
-              "bottomRow": 193,
+              "topRow": 176,
+              "bottomRow": 197,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -5458,8 +5600,8 @@
               "searchTags": [
                 "group"
               ],
-              "topRow": 205,
-              "bottomRow": 228,
+              "topRow": 209,
+              "bottomRow": 232,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
