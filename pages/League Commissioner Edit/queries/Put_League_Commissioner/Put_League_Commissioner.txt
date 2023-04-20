@@ -1,1 +1,8 @@
-{{Post_Commissioner.data}}
+{
+	first_name: {{Input1.text}}, 
+	last_name: {{Input2.text}}, 
+	tenure: {{Input3.text}},
+	salary: {{Input4.text}}, 
+	league_commissioner_id: {{Input5.text}}, 
+	league_id: {{Input6.text}}
+}

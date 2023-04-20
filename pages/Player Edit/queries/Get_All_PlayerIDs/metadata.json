@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Get_All_Players",
+    "name": "Get_All_PlayerIDs",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/pl/players"
+        "url": "web:4000/pl/players/getAllplayerID"
       },
       "invalids": [],
       "messages": [],
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Player Edit_Get_All_Players",
+  "id": "Player Edit_Get_All_PlayerIDs",
   "deleted": false,
-  "gitSyncId": "643f9f62d0bf9d1a7f91a8b1_64401960a2dfbc21ecf0e3e8"
+  "gitSyncId": "643f54a61a6110093ea575cb_64409d271a6110093ea5767f"
 }
