@@ -3559,25 +3559,26 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Del_Player",
-                      "isFilterable": true,
-                      "displayName": "Select",
-                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-                      "labelText": "Select player id",
+                      "widgetName": "del_player_entry",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
-                        "dropdown"
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
                       ],
                       "topRow": 7,
                       "bottomRow": 14,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
-                      "type": "SELECT_WIDGET",
-                      "serverSideFiltering": false,
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
                       "hideCard": false,
-                      "defaultOptionValue": "",
                       "animateLoading": true,
                       "parentColumnSpace": 4.3984375,
                       "dynamicTriggerPathList": [],
+                      "resetOnSubmit": true,
                       "leftColumn": 2,
                       "dynamicBindingPathList": [
                         {
@@ -3585,35 +3586,34 @@
                         },
                         {
                           "key": "borderRadius"
-                        },
-                        {
-                          "key": "options"
                         }
                       ],
                       "labelPosition": "Top",
-                      "options": "{{Get_All_PlayerIDs.data}}",
-                      "placeholderText": "Select option",
+                      "labelStyle": "",
+                      "inputType": "NUMBER",
                       "isDisabled": false,
-                      "key": "ngyal10uxp",
+                      "key": "5kq0vsql0q",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
                       "rightColumn": 61,
                       "dynamicHeight": "FIXED",
-                      "widgetId": "xpsarzz4lx",
+                      "widgetId": "9ygsgvop1h",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "showStepArrows": false,
                       "minWidth": 450,
                       "isVisible": true,
-                      "version": 1,
+                      "label": "Enter id for player you wish to delete",
+                      "version": 2,
                       "parentId": "fv53nblxgb",
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 9,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 16,
+                      "iconAlign": "left",
+                      "defaultText": "",
                       "minDynamicHeight": 4
                     }
                   ],
@@ -3657,14 +3657,6 @@
         },
         "layoutOnLoadActions": [
           [
-            {
-              "id": "Player Edit_Get_All_PlayerIDs",
-              "name": "Get_All_PlayerIDs",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
             {
               "id": "Player Edit_Get_All_Players",
               "name": "Get_All_Players",

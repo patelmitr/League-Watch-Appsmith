@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/pl/players/delete={{Del_Player.filterText}}"
+        "url": "web:4000/pl/players/delete={{del_player_entry.text}}"
       },
       "invalids": [],
       "messages": [],
@@ -55,8 +55,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Del_Player.filterText",
-      "del_form.data"
+      "del_form.data",
+      "del_player_entry.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
