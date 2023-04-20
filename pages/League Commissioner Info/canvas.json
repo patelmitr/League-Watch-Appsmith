@@ -681,7 +681,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Search by league name",
+                      "text": "Search by league id",
                       "key": "eipar0eqzg",
                       "isDeprecated": false,
                       "rightColumn": 58,
@@ -708,7 +708,7 @@
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "Button1CopyCopy1",
-                      "onClick": "{{Get_Commissioner_League_Name.run(() => showAlert('Successfully retrieved data','success'), () => showAlert('Enter valid league name','error'))}}",
+                      "onClick": "{{Get_Commissioner_League_Id.run(() => showAlert('Successfully retrieved data','success'), () => showAlert('Enter valid league id','error'))}}",
                       "buttonColor": "#fca5a5",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -822,7 +822,7 @@
                         }
                       ],
                       "labelStyle": "",
-                      "inputType": "TEXT",
+                      "inputType": "NUMBER",
                       "maxChars": "",
                       "isDisabled": false,
                       "isRequired": false,
@@ -834,7 +834,7 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "originalBottomRow": 15,
-                      "widgetName": "user_input_commis_league_name",
+                      "widgetName": "user_input_commis_league_id",
                       "displayName": "Input",
                       "searchTags": [
                         "form",
@@ -856,7 +856,7 @@
                       "rightColumn": 63,
                       "widgetId": "75mmlmhxvz",
                       "minWidth": 450,
-                      "label": "Enter league name",
+                      "label": "Enter league id number",
                       "parentId": "75twdlgxql",
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
@@ -1825,13 +1825,13 @@
                   "key": "primaryColumns.league_commissioner_id.computedValue"
                 },
                 {
-                  "key": "primaryColumns.league_name.computedValue"
-                },
-                {
                   "key": "primaryColumns.salary.computedValue"
                 },
                 {
                   "key": "primaryColumns.tenure.computedValue"
+                },
+                {
+                  "key": "primaryColumns.league_id.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -1870,7 +1870,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681877699708,
+              "columnUpdatedAt": 1681953654589,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -1880,9 +1880,9 @@
                 "first_name",
                 "last_name",
                 "league_commissioner_id",
-                "league_name",
                 "salary",
-                "tenure"
+                "tenure",
+                "league_id"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
@@ -1987,35 +1987,6 @@
                   "validation": {},
                   "cellBackground": "#fefce8"
                 },
-                "league_name": {
-                  "allowCellWrapping": false,
-                  "index": 3,
-                  "width": 150,
-                  "originalId": "league_name",
-                  "id": "league_name",
-                  "alias": "league_name",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "#713f12",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "league_name",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Get_League_Commiss.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_name\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": "#fefce8"
-                },
                 "salary": {
                   "allowCellWrapping": false,
                   "index": 4,
@@ -2073,6 +2044,35 @@
                   "sticky": "",
                   "validation": {},
                   "cellBackground": "#fefce8"
+                },
+                "league_id": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "league_id",
+                  "id": "league_id",
+                  "alias": "league_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "#713f12",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "league_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Get_League_Commiss.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_id\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": "#fefce8"
                 }
               },
               "key": "nztwq6h5vt",
@@ -2127,13 +2127,13 @@
                   "key": "primaryColumns.league_commissioner_id.computedValue"
                 },
                 {
-                  "key": "primaryColumns.league_name.computedValue"
-                },
-                {
                   "key": "primaryColumns.salary.computedValue"
                 },
                 {
                   "key": "primaryColumns.tenure.computedValue"
+                },
+                {
+                  "key": "primaryColumns.league_id.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -2173,7 +2173,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681877821204,
+              "columnUpdatedAt": 1681955217221,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -2183,9 +2183,9 @@
                 "first_name",
                 "last_name",
                 "league_commissioner_id",
-                "league_name",
                 "salary",
-                "tenure"
+                "tenure",
+                "league_id"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
@@ -2289,35 +2289,6 @@
                   "validation": {},
                   "cellBackground": "#fefce8"
                 },
-                "league_name": {
-                  "allowCellWrapping": false,
-                  "index": 3,
-                  "width": 150,
-                  "originalId": "league_name",
-                  "id": "league_name",
-                  "alias": "league_name",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "#713f12",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "league_name",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Get_Commiss_By_ID.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_name\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": "#fefce8"
-                },
                 "salary": {
                   "allowCellWrapping": false,
                   "index": 4,
@@ -2375,6 +2346,35 @@
                   "sticky": "",
                   "validation": {},
                   "cellBackground": "#fefce8"
+                },
+                "league_id": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "league_id",
+                  "id": "league_id",
+                  "alias": "league_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "#713f12",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "league_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Get_Commiss_By_ID.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_id\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": "#fefce8"
                 }
               },
               "key": "nztwq6h5vt",
@@ -2429,13 +2429,13 @@
                   "key": "primaryColumns.league_commissioner_id.computedValue"
                 },
                 {
-                  "key": "primaryColumns.league_name.computedValue"
-                },
-                {
                   "key": "primaryColumns.salary.computedValue"
                 },
                 {
                   "key": "primaryColumns.tenure.computedValue"
+                },
+                {
+                  "key": "primaryColumns.league_id.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -2474,7 +2474,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681877965687,
+              "columnUpdatedAt": 1681953670372,
               "originalBottomRow": 47,
               "defaultSelectedRowIndices": [
                 0
@@ -2485,9 +2485,9 @@
                 "first_name",
                 "last_name",
                 "league_commissioner_id",
-                "league_name",
                 "salary",
-                "tenure"
+                "tenure",
+                "league_id"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
@@ -2591,35 +2591,6 @@
                   "validation": {},
                   "cellBackground": "#fefce8"
                 },
-                "league_name": {
-                  "allowCellWrapping": false,
-                  "index": 3,
-                  "width": 150,
-                  "originalId": "league_name",
-                  "id": "league_name",
-                  "alias": "league_name",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "#713f12",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "league_name",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{First_name.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_name\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": "#fefce8"
-                },
                 "salary": {
                   "allowCellWrapping": false,
                   "index": 4,
@@ -2674,6 +2645,35 @@
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{First_name.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tenure\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": "#fefce8"
+                },
+                "league_id": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "league_id",
+                  "id": "league_id",
+                  "alias": "league_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "#713f12",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "league_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{First_name.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_id\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": "#fefce8"
@@ -2732,13 +2732,13 @@
                   "key": "primaryColumns.league_commissioner_id.computedValue"
                 },
                 {
-                  "key": "primaryColumns.league_name.computedValue"
-                },
-                {
                   "key": "primaryColumns.salary.computedValue"
                 },
                 {
                   "key": "primaryColumns.tenure.computedValue"
+                },
+                {
+                  "key": "primaryColumns.league_id.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -2777,7 +2777,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681878109828,
+              "columnUpdatedAt": 1681953703645,
               "originalBottomRow": 69,
               "defaultSelectedRowIndices": [
                 0
@@ -2788,9 +2788,9 @@
                 "first_name",
                 "last_name",
                 "league_commissioner_id",
-                "league_name",
                 "salary",
-                "tenure"
+                "tenure",
+                "league_id"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
@@ -2893,35 +2893,6 @@
                   "validation": {},
                   "cellBackground": "#fefce8"
                 },
-                "league_name": {
-                  "allowCellWrapping": false,
-                  "index": 3,
-                  "width": 150,
-                  "originalId": "league_name",
-                  "id": "league_name",
-                  "alias": "league_name",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "#713f12",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "league_name",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Last_name.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_name\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": "#fefce8"
-                },
                 "salary": {
                   "allowCellWrapping": false,
                   "index": 4,
@@ -2976,6 +2947,35 @@
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Last_name.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tenure\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": "#fefce8"
+                },
+                "league_id": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "league_id",
+                  "id": "league_id",
+                  "alias": "league_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "#713f12",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "league_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Last_name.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_id\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": "#fefce8"
@@ -3034,13 +3034,13 @@
                   "key": "primaryColumns.league_commissioner_id.computedValue"
                 },
                 {
-                  "key": "primaryColumns.league_name.computedValue"
-                },
-                {
                   "key": "primaryColumns.salary.computedValue"
                 },
                 {
                   "key": "primaryColumns.tenure.computedValue"
+                },
+                {
+                  "key": "primaryColumns.league_id.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -3079,7 +3079,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681878209981,
+              "columnUpdatedAt": 1681953761187,
               "originalBottomRow": 91,
               "defaultSelectedRowIndices": [
                 0
@@ -3090,9 +3090,9 @@
                 "first_name",
                 "last_name",
                 "league_commissioner_id",
-                "league_name",
                 "salary",
-                "tenure"
+                "tenure",
+                "league_id"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
@@ -3195,35 +3195,6 @@
                   "validation": {},
                   "cellBackground": "#fefce8"
                 },
-                "league_name": {
-                  "allowCellWrapping": false,
-                  "index": 3,
-                  "width": 150,
-                  "originalId": "league_name",
-                  "id": "league_name",
-                  "alias": "league_name",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "#713f12",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "league_name",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{League_Name.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_name\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": "#fefce8"
-                },
                 "salary": {
                   "allowCellWrapping": false,
                   "index": 4,
@@ -3281,6 +3252,35 @@
                   "sticky": "",
                   "validation": {},
                   "cellBackground": "#fefce8"
+                },
+                "league_id": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "league_id",
+                  "id": "league_id",
+                  "alias": "league_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "#713f12",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "league_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{League_Name.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_id\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": "#fefce8"
                 }
               },
               "key": "nztwq6h5vt",
@@ -3290,7 +3290,7 @@
               "textSize": "0.875rem",
               "widgetId": "gtch43tdo1",
               "minWidth": 450,
-              "tableData": "{{Get_Commissioner_League_Name.data}}",
+              "tableData": "{{Get_Commissioner_League_Id.data}}",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -3932,12 +3932,12 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "League Commissioner Info_Get_Commissioner_League_Name",
-              "name": "Get_Commissioner_League_Name",
+              "id": "League Commissioner Info_Get_Commissioner_League_Id",
+              "name": "Get_Commissioner_League_Id",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "user_input_commis_league_name.text"
+                "user_input_commis_league_id.text"
               ],
               "timeoutInMillisecond": 10000
             },
