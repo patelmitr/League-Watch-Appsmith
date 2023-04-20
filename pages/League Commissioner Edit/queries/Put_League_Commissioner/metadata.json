@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/l/leagueCommissioner/put=1"
+        "url": "web:4000/l/leagueCommissioner/put={{league_commissioner_id.text}}"
       },
       "invalids": [],
       "messages": [],
@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{Edit_Commissioner_Information.data}}",
+      "body": "{\n\tfirst_name: {{Input1.text}}, \n\tlast_name: {{Input2.text}}, \n\ttenure: {{Input3.text}},\n\tsalary: {{Input4.text}}, \n\tleague_commissioner_id: {{Input5.text}}, \n\tleague_id: {{Input6.text}}\n}",
       "bodyFormData": [],
       "httpMethod": "PUT",
       "selfReferencingDataPaths": [],
@@ -45,6 +45,9 @@
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
+        "key": "datasourceUrl"
+      },
+      {
         "key": "body"
       }
     ],
@@ -52,7 +55,13 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Edit_Commissioner_Information.data"
+      "Input1.text",
+      "Input2.text",
+      "Input3.text",
+      "Input4.text",
+      "Input5.text",
+      "Input6.text",
+      "league_commissioner_id.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "get_players_to_edit",
+    "name": "Get_Commissioner_League_Id",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/pl/players/{{edit_player_select.filterText}}"
+        "url": "web:4000/l/leagueCommissioner/leagueid={{user_input_commis_league_id.text}}"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Player Edit",
+    "pageId": "League Commissioner Info",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -39,6 +39,9 @@
     "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
+        "key": "datasource.datasourceConfiguration.url"
+      },
+      {
         "key": "datasourceUrl"
       }
     ],
@@ -46,14 +49,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "edit_player_select.filterText"
+      "user_input_commis_league_id.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Player Edit_get_players_to_edit",
+  "id": "League Commissioner Info_Get_Commissioner_League_Id",
   "deleted": false,
-  "gitSyncId": "643f54a61a6110093ea575cb_644068701a6110093ea57656"
+  "gitSyncId": "643f54a61a6110093ea575cb_643f6d3e1a6110093ea57612"
 }

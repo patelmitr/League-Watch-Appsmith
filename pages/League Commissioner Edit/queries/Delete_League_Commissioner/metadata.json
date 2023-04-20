@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{Edit_Commissioner_Information.data}}",
+      "body": "{{Post_Commissioner.data}}",
       "bodyFormData": [],
       "httpMethod": "DELETE",
       "selfReferencingDataPaths": [],
@@ -52,7 +52,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Edit_Commissioner_Information.data"
+      "Post_Commissioner.data"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

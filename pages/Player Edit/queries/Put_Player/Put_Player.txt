@@ -1,1 +1,15 @@
-{{Post_Player.data}}
+{
+	first_name: {{Input2.text}}, 
+	last_name: {{Input3.text}},
+	salary: {{Input11.text}}, 
+	team_id: {{Input4.text}}, 
+	player_number: {{Input9.text}}, 
+	position: {{Input10.text}},
+	points: {{Input5.text}}, 
+	assists: {{Input6.text}}, 
+	steals: {{Input12.text}}, 
+	blocks: {{Input7.text}},
+	rebounds: {{Input14.text}}, 
+	turnovers: {{Input13.text}}, 
+	games_played: {{Input8.text}}
+}

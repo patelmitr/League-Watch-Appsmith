@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/pl/players/delete={{delete_player_id_input.filterText}}"
+        "url": "web:4000/pl/players/delete={{Del_Player.filterText}}"
       },
       "invalids": [],
       "messages": [],
@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{Post_Player.data}}",
+      "body": "{{del_form.data}}",
       "bodyFormData": [],
       "httpMethod": "DELETE",
       "selfReferencingDataPaths": [],
@@ -55,8 +55,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Post_Player.data",
-      "delete_player_id_input.filterText"
+      "Del_Player.filterText",
+      "del_form.data"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

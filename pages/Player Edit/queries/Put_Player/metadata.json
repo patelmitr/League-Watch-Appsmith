@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/pl/players"
+        "url": "web:4000/pl/players/put={{Input1.text}}"
       },
       "invalids": [],
       "messages": [],
@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{Post_Player.data}}",
+      "body": "{\n\tfirst_name: {{Input2.text}}, \n\tlast_name: {{Input3.text}},\n\tsalary: {{Input11.text}}, \n\tteam_id: {{Input4.text}}, \n\tplayer_number: {{Input9.text}}, \n\tposition: {{Input10.text}},\n\tpoints: {{Input5.text}}, \n\tassists: {{Input6.text}}, \n\tsteals: {{Input12.text}}, \n\tblocks: {{Input7.text}},\n\trebounds: {{Input14.text}}, \n\tturnovers: {{Input13.text}}, \n\tgames_played: {{Input8.text}}\n}",
       "bodyFormData": [],
       "httpMethod": "PUT",
       "selfReferencingDataPaths": [],
@@ -45,6 +45,9 @@
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
+        "key": "datasourceUrl"
+      },
+      {
         "key": "body"
       }
     ],
@@ -52,7 +55,20 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Post_Player.data"
+      "Input1.text",
+      "Input10.text",
+      "Input11.text",
+      "Input12.text",
+      "Input13.text",
+      "Input14.text",
+      "Input2.text",
+      "Input3.text",
+      "Input4.text",
+      "Input5.text",
+      "Input6.text",
+      "Input7.text",
+      "Input8.text",
+      "Input9.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
