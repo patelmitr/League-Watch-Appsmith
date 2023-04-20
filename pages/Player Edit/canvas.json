@@ -741,7 +741,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button2",
+                      "widgetName": "ResetButton_postPlayer",
                       "onClick": "{{resetWidget(\"Post_Player\",true)}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
@@ -2394,7 +2394,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button4",
+                      "widgetName": "ResetButton_putPlayer",
                       "onClick": "{{resetWidget(\"Form1\",true)}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
@@ -3398,7 +3398,7 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
-                      "widgetName": "Text1",
+                      "widgetName": "Delete_Player_Header",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                       "searchTags": [
@@ -3454,7 +3454,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button5",
+                      "widgetName": "Delete_submit",
                       "onClick": "{{Delete_Player.run(() => showAlert('Player successfully deleted','success'), () => showAlert('Unable to delete player','error'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
@@ -3507,7 +3507,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button6",
+                      "widgetName": "ResetButton_deletePlayer",
                       "onClick": "{{resetWidget(\"Del_Player\",true)}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",

@@ -175,7 +175,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button4",
+                      "widgetName": "ResetButton_putCommissioner",
                       "onClick": "{{resetWidget(\"Put_Commissioner\",true)}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
@@ -671,7 +671,7 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
-                      "widgetName": "add_new_playerCopy",
+                      "widgetName": "Delete_Commissioner_Header",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                       "searchTags": [
@@ -727,7 +727,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button1Copy",
+                      "widgetName": "Submit_delete",
                       "onClick": "{{Delete_League_Commissioner.run(() => showAlert('Successfully deleted the league commissioner','success'), () => showAlert('Could not delete the league commissioner','error'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
@@ -780,7 +780,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button2Copy",
+                      "widgetName": "ResetButton_delete",
                       "onClick": "{{resetWidget(\"DEL_LeagueCommissioner\",true)}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
@@ -969,7 +969,7 @@
                   "dynamicBindingPathList": [],
                   "children": [
                     {
-                      "widgetName": "Header",
+                      "widgetName": "Post_Commissioner_Header",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                       "searchTags": [
@@ -1025,7 +1025,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button1",
+                      "widgetName": "Submit_postCommissioner",
                       "onClick": "{{Post_League_Commissioner.run(() => showAlert('Added successfully','success'), () => showAlert('could not add commissioner','error'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
@@ -1076,7 +1076,7 @@
                     {
                       "resetFormOnClick": true,
                       "boxShadow": "none",
-                      "widgetName": "Button2",
+                      "widgetName": "ResetButton_postCommissioner",
                       "onClick": "{{resetWidget(\"Post_Commissioner\",true)}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
