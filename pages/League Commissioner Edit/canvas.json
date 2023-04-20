@@ -625,7 +625,7 @@
               "originalTopRow": 67,
               "borderRadius": "0px",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 107,
+              "originalBottomRow": 106,
               "minDynamicHeight": 10
             },
             {
@@ -1028,7 +1028,7 @@
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "Button1",
-                      "onClick": "{{Post_League_Commissioner.run()}}",
+                      "onClick": "{{Post_League_Commissioner.run(() => showAlert('Added successfully','success'), () => showAlert('could not add commissioner','error'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
