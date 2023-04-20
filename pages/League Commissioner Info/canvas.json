@@ -278,7 +278,7 @@
                       "originalTopRow": 8,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "1",
                       "minDynamicHeight": 4
                     }
                   ],
@@ -567,7 +567,7 @@
                       "originalTopRow": 8,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "Carrol",
                       "minDynamicHeight": 4
                     }
                   ],
@@ -864,7 +864,7 @@
                       "originalTopRow": 8,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "1",
                       "minDynamicHeight": 4
                     }
                   ],
@@ -1160,7 +1160,7 @@
                       "originalTopRow": 8,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "10000000",
                       "minDynamicHeight": 4
                     }
                   ],
@@ -1456,7 +1456,7 @@
                       "originalTopRow": 8,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "10",
                       "minDynamicHeight": 4
                     }
                   ],
@@ -1752,7 +1752,7 @@
                       "originalTopRow": 8,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "Itscowicz",
                       "minDynamicHeight": 4
                     }
                   ],
@@ -3336,13 +3336,13 @@
                   "key": "primaryColumns.league_commissioner_id.computedValue"
                 },
                 {
-                  "key": "primaryColumns.league_name.computedValue"
-                },
-                {
                   "key": "primaryColumns.salary.computedValue"
                 },
                 {
                   "key": "primaryColumns.tenure.computedValue"
+                },
+                {
+                  "key": "primaryColumns.league_id.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -3381,7 +3381,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681878295716,
+              "columnUpdatedAt": 1682008096765,
               "originalBottomRow": 111,
               "defaultSelectedRowIndices": [
                 0
@@ -3392,9 +3392,9 @@
                 "first_name",
                 "last_name",
                 "league_commissioner_id",
-                "league_name",
                 "salary",
-                "tenure"
+                "tenure",
+                "league_id"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
@@ -3497,35 +3497,6 @@
                   "validation": {},
                   "cellBackground": "#fefce8"
                 },
-                "league_name": {
-                  "allowCellWrapping": false,
-                  "index": 3,
-                  "width": 150,
-                  "originalId": "league_name",
-                  "id": "league_name",
-                  "alias": "league_name",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "#713f12",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "league_name",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Salary.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_name\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": "#fefce8"
-                },
                 "salary": {
                   "allowCellWrapping": false,
                   "index": 4,
@@ -3580,6 +3551,35 @@
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Salary.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tenure\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": "#fefce8"
+                },
+                "league_id": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "league_id",
+                  "id": "league_id",
+                  "alias": "league_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "#713f12",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "league_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Salary.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_id\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": "#fefce8"
@@ -3638,13 +3638,13 @@
                   "key": "primaryColumns.league_commissioner_id.computedValue"
                 },
                 {
-                  "key": "primaryColumns.league_name.computedValue"
-                },
-                {
                   "key": "primaryColumns.salary.computedValue"
                 },
                 {
                   "key": "primaryColumns.tenure.computedValue"
+                },
+                {
+                  "key": "primaryColumns.league_id.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -3683,7 +3683,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681878558067,
+              "columnUpdatedAt": 1682008106360,
               "originalBottomRow": 131,
               "defaultSelectedRowIndices": [
                 0
@@ -3694,9 +3694,9 @@
                 "first_name",
                 "last_name",
                 "league_commissioner_id",
-                "league_name",
                 "salary",
-                "tenure"
+                "tenure",
+                "league_id"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
@@ -3799,35 +3799,6 @@
                   "validation": {},
                   "cellBackground": "#fefce8"
                 },
-                "league_name": {
-                  "allowCellWrapping": false,
-                  "index": 3,
-                  "width": 150,
-                  "originalId": "league_name",
-                  "id": "league_name",
-                  "alias": "league_name",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "#713f12",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "league_name",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Tenure.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_name\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": "#fefce8"
-                },
                 "salary": {
                   "allowCellWrapping": false,
                   "index": 4,
@@ -3882,6 +3853,35 @@
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Tenure.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tenure\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": "#fefce8"
+                },
+                "league_id": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "league_id",
+                  "id": "league_id",
+                  "alias": "league_id",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "number",
+                  "textColor": "#713f12",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "league_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Tenure.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"league_id\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": "#fefce8"

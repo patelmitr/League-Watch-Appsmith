@@ -175,7 +175,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681945406587,
+              "columnUpdatedAt": 1682008244709,
               "originalBottomRow": 161,
               "defaultSelectedRowIndices": [
                 0
@@ -907,7 +907,7 @@
                       "originalTopRow": 5,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "Audrie",
                       "minDynamicHeight": 4
                     },
                     {
@@ -969,7 +969,7 @@
                       "originalTopRow": 13,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "Buckett",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1031,7 +1031,7 @@
                       "originalTopRow": 21,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "4449290",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1093,7 +1093,7 @@
                       "originalTopRow": 29,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "2",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1155,7 +1155,7 @@
                       "originalTopRow": 5,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "1",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1217,7 +1217,7 @@
                       "originalTopRow": 13,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "1",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1279,7 +1279,7 @@
                       "originalTopRow": 21,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "pf",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1341,7 +1341,7 @@
                       "originalTopRow": 29,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "1365",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1403,7 +1403,7 @@
                       "originalTopRow": 5,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "330",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1465,7 +1465,7 @@
                       "originalTopRow": 13,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "70",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1527,7 +1527,7 @@
                       "originalTopRow": 21,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "10",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1589,7 +1589,7 @@
                       "originalTopRow": 29,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "250",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1651,7 +1651,7 @@
                       "originalTopRow": 5,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "33",
                       "minDynamicHeight": 4
                     },
                     {
@@ -1713,7 +1713,7 @@
                       "originalTopRow": 13,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "82",
                       "minDynamicHeight": 4
                     }
                   ],
@@ -2649,9 +2649,6 @@
                         },
                         {
                           "key": "borderRadius"
-                        },
-                        {
-                          "key": "defaultText"
                         }
                       ],
                       "labelStyle": "",
@@ -2696,7 +2693,7 @@
                       "originalTopRow": 13,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "{{Table1.selectedRow.first_name}}",
+                      "defaultText": "Mitra",
                       "minDynamicHeight": 4
                     },
                     {
@@ -3762,7 +3759,7 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "1",
                       "minDynamicHeight": 4
                     }
                   ],
